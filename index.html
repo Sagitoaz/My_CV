@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nguyễn Thành Trung - Sinh viên IT</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800/95 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-400">NT. Trung</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition">Trang chủ</a>
+                    <a href="#about" class="hover:text-blue-400 transition">Giới thiệu</a>
+                    <a href="#skills" class="hover:text-blue-400 transition">Kỹ năng</a>
+                    <a href="#projects" class="hover:text-blue-400 transition">Dự án</a>
+                    <a href="#experience" class="hover:text-blue-400 transition">Kinh nghiệm</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Liên hệ</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 hover:text-blue-400 transition">Trang chủ</a>
+                <a href="#about" class="block py-2 hover:text-blue-400 transition">Giới thiệu</a>
+                <a href="#skills" class="block py-2 hover:text-blue-400 transition">Kỹ năng</a>
+                <a href="#projects" class="block py-2 hover:text-blue-400 transition">Dự án</a>
+                <a href="#experience" class="block py-2 hover:text-blue-400 transition">Kinh nghiệm</a>
+                <a href="#contact" class="block py-2 hover:text-blue-400 transition">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="text-center">
+            <div class="mb-8">
+                <div class="w-40 h-40 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-code text-6xl text-white"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Nguyễn Thành Trung
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-300 mb-6">Sinh viên Công nghệ Thông tin</p>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                Đam mê lập trình và phát triển các dự án sáng tạo từ game, web đến mobile app
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">
+                    Liên hệ tôi
+                </a>
+                <a href="#projects" class="border border-blue-500 hover:bg-blue-500 text-blue-400 hover:text-white px-8 py-3 rounded-lg font-semibold transition">
+                    Xem dự án
+                </a>
+            </div>
+            <div class="flex gap-6 justify-center mt-8">
+                <a href="https://github.com/Sagitoaz" target="_blank" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/trung-nguy%E1%BB%85n-b4480a36a/" target="_blank" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:trung241az@gmail.com" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-gray-800/50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Giới thiệu về tôi</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Xin chào! Tôi là sinh viên Công nghệ Thông tin với niềm đam mê lập trình và học hỏi các công nghệ mới. 
+                        Tôi thích khám phá nhiều lĩnh vực khác nhau từ phát triển game, web application đến mobile app.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Thông qua các dự án cá nhân và học tập, tôi đã tích lũy được kiến thức về nhiều ngôn ngữ lập trình 
+                        và framework khác nhau. Tôi luôn sẵn sàng học hỏi và thử thách bản thân với những công nghệ mới.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-blue-400 mb-2">15+</p>
+                            <p class="text-gray-400">Dự án cá nhân</p>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-blue-400 mb-2">10+</p>
+                            <p class="text-gray-400">Công nghệ đã học</p>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-blue-400 mb-2"><i class="fab fa-github"></i></p>
+                            <p class="text-gray-400">Active trên GitHub</p>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-blue-400 mb-2">∞</p>
+                            <p class="text-gray-400">Khát khao học hỏi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Sở thích & Đam mê</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Phát triển game với Unity</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Xây dựng web applications (Frontend & Backend)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Học và thử nghiệm công nghệ mới</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Chia sẻ code trên GitHub</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Giải quyết vấn đề và debug code</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Kỹ năng chuyên môn</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tech Stack -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-3xl text-blue-400 mr-4"></i>
+                        <h3 class="text-xl font-bold">Ngôn ngữ & Framework</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">JavaScript</span>
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">Python</span>
+                        <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded">React</span>
+                        <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded">Node.js</span>
+                        <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded">Unity</span>
+                        <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded">C#</span>
+                        <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded">Java</span>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-3xl text-green-400 mr-4"></i>
+                        <h3 class="text-xl font-bold">Database & Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">MySQL</span>
+                        <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded">MongoDB</span>
+                        <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded">Git</span>
+                        <span class="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded">VS Code</span>
+                        <span class="bg-pink-500/20 text-pink-400 px-3 py-1 rounded">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-3xl text-yellow-400 mr-4"></i>
+                        <h3 class="text-xl font-bold">Khác</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">Docker</span>
+                        <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded">REST API</span>
+                        <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded">Tailwind CSS</span>
+                        <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-800/50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Dự án nổi bật</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-clinic-medical text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Ứng dụng Quản lý Phòng khám Mắt</h3>
+                        <p class="text-gray-400 mb-4">
+                            Ứng dụng Java quản lý bệnh nhân, lịch khám, hồ sơ bệnh án và quản lý thuốc cho phòng khám mắt.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-500/20 text-orange-400 px-3 py-1 rounded text-sm">Java</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-sm">OOP</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-sm">JavaFX</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sagitoaz/BTL_OOP" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Metroidvania Game</h3>
+                        <p class="text-gray-400 mb-4">
+                            Game phiêu lưu hành động 2D với cơ chế khám phá, upgrade ability và chiến đấu với boss.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded text-sm">Unity</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-sm">C#</span>
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-sm">2D</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sagitoaz/ProPixelGameJam" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-file-archive text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">LZW Compression Tool</h3>
+                        <p class="text-gray-400 mb-4">
+                            Công cụ nén và giải nén file sử dụng thuật toán LZW với giao diện người dùng đơn giản.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-sm">Python</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-sm">LZW</span>
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded text-sm">Tkinter</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sagitoaz/LZW_Compress_Decompress_tool" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">VS Code AI Code Suggester</h3>
+                        <p class="text-gray-400 mb-4">
+                            Extension VS Code sử dụng AI để gợi ý code thông minh, tự động hoàn thiện và tối ưu hóa code.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-sm">Python</span>
+                            <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-sm">AI/ML</span>
+                            <span class="bg-purple-500/20 text-purple-400 px-3 py-1 rounded text-sm">VS Code API</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sagitoaz/BTL_Python" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="experience" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Học vấn & Thành tích</h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"></div>
+                
+                <!-- Education 1 -->
+                <div class="mb-12 flex flex-col md:flex-row items-start md:items-center relative">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <h3 class="text-2xl font-bold text-blue-400">Kỹ sư Công nghệ Thông tin</h3>
+                        <p class="text-gray-400 mb-2">Học viện Công nghệ Bưu chính Viễn thông</p>
+                        <p class="text-gray-500">2026 - Hiện tại</p>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900"></div>
+                    <div class="md:w-1/2 md:pl-12 ml-10 md:ml-0">
+                        <ul class="text-gray-300 space-y-2">
+                            <li>• GPA: 3.6/4.0</li>
+                            <li>• Chuyên ngành: Phần mềm và Ứng dụng</li>
+                            <li>• Học các môn: Cấu trúc dữ liệu, Thuật toán, Lập trình hướng đối tượng</li>
+                            <li>• Tham gia CLB lập trình và các hoạt động tech</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Online Course -->
+                <div class="mb-12 flex flex-col md:flex-row items-start md:items-center relative">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <h3 class="text-2xl font-bold text-blue-400">Các khóa học Online</h3>
+                        <p class="text-gray-400 mb-2">Coursera, Udemy, FreeCodeCamp</p>
+                        <p class="text-gray-500">2023 - 2025</p>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900"></div>
+                    <div class="md:w-1/2 md:pl-12 ml-10 md:ml-0">
+                        <ul class="text-gray-300 space-y-2">
+                            <li>• Full Stack Web Development</li>
+                            <li>• Game Development with Unity</li>
+                            <li>• Data Structures and Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-800/50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Liên hệ với tôi</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Thông tin liên hệ</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl text-blue-400 mr-4 w-8"></i>
+                            <div>
+                                <p class="text-gray-400 text-sm">Email</p>
+                                <a href="mailto:trung241az@gmail.com" class="text-lg hover:text-blue-400 transition">trung@example.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl text-blue-400 mr-4 w-8"></i>
+                            <div>
+                                <p class="text-gray-400 text-sm">Điện thoại</p>
+                                <a href="tel:+84866538898" class="text-lg hover:text-blue-400 transition">+84 123 456 789</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl text-blue-400 mr-4 w-8"></i>
+                            <div>
+                                <p class="text-gray-400 text-sm">Địa chỉ</p>
+                                <p class="text-lg">Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4">Mạng xã hội</h4>
+                        <div class="flex gap-4">
+                            <a href="https://github.com" target="_blank" class="bg-gray-900 hover:bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center transition">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="bg-gray-900 hover:bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center transition">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="bg-gray-900 hover:bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center transition">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="https://stackoverflow.com" target="_blank" class="bg-gray-900 hover:bg-blue-500 w-12 h-12 rounded-lg flex items-center justify-center transition">
+                                <i class="fab fa-stack-overflow text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Gửi tin nhắn</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-400 mb-2">Tên của bạn</label>
+                            <input type="text" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Email</label>
+                            <input type="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition" placeholder="Nhập email của bạn">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Tin nhắn</label>
+                            <textarea rows="5" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition" placeholder="Nội dung tin nhắn..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition transform hover:scale-105">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2026 Nguyễn Thành Trung. All rights reserved.</p>
+            <p class="text-gray-500 mt-2">Made with <i class="fas fa-heart text-red-500"></i> and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-2xl');
+            } else {
+                nav.classList.remove('shadow-2xl');
+            }
+        });
+    </script>
+</body>
+</html>
